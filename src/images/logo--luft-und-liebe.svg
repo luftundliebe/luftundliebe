@@ -1,8 +1,0 @@
-<svg id="logo--luft-und-liebe" viewBox="0 0 120 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="logo" transform="translate(1.000000, 1.000000)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-      <polygon id="berg--hinten" stroke="#C2D6C8" points="39 31 78 70 0 70"></polygon>
-      <polygon id="berg--abdeckung" fill="#FFFFFF" points="69 32 108 71 30 71"></polygon>
-      <polygon id="berg--vorne" stroke="#89A491" points="79 31 118 70 40 70"></polygon>
-      <path d="M31.3511064,17.2146544 C30.313421,12.6435575 31.575874,7.66488482 35.1384654,4.13918306 C40.6564193,-1.32163389 49.6013129,-1.37972769 55.061183,4.13918306 L59.0108763,8.08956127 L62.9605696,4.13918306 C68.4785234,-1.37972769 77.4234171,-1.37972769 82.8832872,4.13918306 L82.8832872,4.13918306 C86.7501009,8.04781075 87.9074762,13.6756275 86.2935135,18.566853" id="herz" stroke="#F4CCB0" stroke-linecap="round" fill-rule="nonzero"></path>
-    </g>
-</svg>

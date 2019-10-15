@@ -1,3 +1,10 @@
-import list from './modules/list'
+import IntroAnimation from './modules/introAnimation.js'
 
-console.log(`Hello ${list[0]}`)
+//
+// On DOM loaded
+// ------------------------------------------------------------- //
+document.addEventListener('DOMContentLoaded', (event) => {
+
+  let intro = new IntroAnimation()
+
+})
