@@ -3,3 +3,9 @@
 *:before {
   box-sizing: border-box;
 }
+
+img,
+video,
+object {
+  max-width: 100%;
+}
