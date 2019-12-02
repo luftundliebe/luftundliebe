@@ -6,6 +6,10 @@
 .section--alt {
   background: $c--green--300;
   color: $c--white;
+
+  * {
+    color: inherit;
+  }
 }
 
 .approach {

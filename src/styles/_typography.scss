@@ -14,7 +14,9 @@ p {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   max-width: 60ch;
-  font-weight: 100;
+  font-weight: 700;
+  hyphens: auto;
+  color: $c--green--100;
 }
 
 h1 {
@@ -35,4 +37,8 @@ h4 {
 
 h5 {
   font-size: 1.25em;
+}
+
+@media (min-width: 64rem) {
+  hyphens: none;
 }

@@ -8,6 +8,7 @@
               url(../images/foto--klara-tom.jpg) top left no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .quote__text {
@@ -24,4 +25,15 @@
   font-weight: 200;
   font-style: normal;
   line-height: 2;
+}
+
+@media (min-width: 64rem) {
+  .quote {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+  }
+
+  .quote__text {
+    grid-column: 2 / 5;
+  }
 }

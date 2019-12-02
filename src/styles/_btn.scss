@@ -10,6 +10,13 @@
 }
 
 .btn--primary {
-  background: $c--green--100;
+  background: linear-gradient(90deg, lighten($c--green--100, 5%) 0%, lighten($c--green--100, 5%) 50%, $c--green--100 50%, $c--green--100 100%);
+  background-size: 200%;
+  background-position: 100%;
   color: $c--white;
+  transition: background-position .2s ease-out;
+
+  &:hover {
+    background-position: 0%;
+  }
 }
