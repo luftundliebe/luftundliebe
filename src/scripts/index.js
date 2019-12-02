@@ -1,4 +1,4 @@
-import IntroAnimation from './modules/IntroAnimation.js'
+import IntroAnimation from './modules/introAnimation.js'
 import Switcher from './modules/Switcher.js'
 
 //
