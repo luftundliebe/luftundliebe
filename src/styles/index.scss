@@ -3,10 +3,23 @@
 @import '_normalize.css';
 @import '_typography.scss';
 @import '_main.scss';
+@import '_section.scss';
 @import '_intro.scss';
 @import '_logo.scss';
+@import '_switch.scss';
+@import '_img-overlay.scss';
+@import '_btn.scss';
+@import '_quote.scss';
+@import '_wrapper.scss';
 
 body {
   background-color: $c--white;
   overflow-x: hidden;
 }
+
+// h1,h2,h3,h4,h5,h6,hgroup,
+// ul,ol,dd,
+// p,figure,
+// pre,table,fieldset,hr{
+//     margin: 0 0 2rem;
+// }

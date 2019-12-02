@@ -1,0 +1,27 @@
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 0;
+  background: linear-gradient(0deg, rgba($c--green--100, .6), rgba($c--green--100, .6)),
+              url(../images/foto--klara-tom.jpg) top left no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.quote__text {
+  max-width: 30ch;
+  font-size: calc(1.5rem + 2.5vw);
+  font-weight: bold;
+  line-height: 1.2;
+  color: $c--white;
+}
+
+.quote__author {
+  display: block;
+  font-size: 60%;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 2;
+}

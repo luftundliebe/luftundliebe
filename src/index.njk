@@ -21,39 +21,68 @@ title: Luft & Liebe
     </div>
   </section>
   <section class="approach section section--alt">
-    <h2>Anfahrt nach Südtirol</h2>
-    <p>Wir sind uns bewusst, dass die Anreise nach Südtirol nicht die einfachste ist und wollen sie euch so angenehm wie möglich machen. Solltet ihr Schwierigkeiten haben von A nach B zu kommen oder habt noch einen Platz im Auto frei, den ihr vergeben möchtet, dann gebt uns bitte Bescheid - wir finden für alles eine Lösung!</p>
-    <div class="travelmaps">
-      <a class="img-link" title="Bild öffnen" href="images/map--europe--train.jpg">
-        <img class="map" src="images/map--europe--train.svg" alt="Eine handgezeichnete Landkarte Europas, die Zugrouten nach Vigiljoch zeigt.">
-      </a>
-      <a class="img-link" title="Bild öffnen" href="images/map--europe--car.jpg">
-        <img class="map" src="images/map--europe--car.svg" alt="Eine handgezeichnete Landkarte Europas, die Autorouten nach Vigiljoch zeigt.">
-      </a>
-      <a class="img-link" title="Bild öffnen" href="images/map--europe--plane.jpg">
-        <img class="map" src="images/map--europe--plane.svg" alt="Eine handgezeichnete Landkarte Europas, die Flugrouten nach Vigiljoch zeigt.">
-      </a>
+    <div class="wrapper--text">
+      <h2>Anfahrt nach Südtirol</h2>
+      <p>Wir sind uns bewusst, dass die Anreise nach Südtirol nicht die einfachste ist und wollen sie euch so angenehm wie möglich machen. Solltet ihr Schwierigkeiten haben um von A nach B zu kommen oder habt noch einen Platz im Auto frei, den ihr vergeben möchtet, dann gebt uns bitte Bescheid - wir finden für alles eine Lösung!</p>
     </div>
-    <h3>Mit dem Zug</h3>
-    <ul>
-      <li>Mit ICE nach München</li>
-      <li>Von dort mit dem EC Richtung Bologna/Venezia/Verona bis nach Bozen</li>
-    </ul>
-    <h3>Mit dem Auto</h3>
-    <ul>
-      <li>Bitte versucht Fahrgemeinschaften zu bilden</li>
-      <li>Kostenlose Parkmöglichkeiten an der Schwebeseilbahn in Lana</li>
-    </ul>
-    <h3>Mit dem Flugzeug</h3>
-    <ul>
-      <li>Von HH mit Ryanair nach Bergamo, Verona</li>
-      <li>Von HH mit Lufthansa nach München</li>
-      <li>Von Berlin mit Ryanair nach Bergamo, München</li>
-      <li>Von Berlin mit Lufthansa nach München</li>
-      <li>Von Berlin mit easyjet nach Innsbruck, Malpensa</li>
-      <li>Von Wien mit Ryanair nach Bergamo</li>
-      <li>Von Wien mit Lufthansa nach Verona</li>
-    </ul>
+    <div class="img-overlay">
+      <div class="img-overlay__img">
+        <img class="map map--is-visible" data-type="car" src="images/map--europe--car.jpg" alt="Eine handgezeichnete Landkarte Europas, die Autorouten nach Vigiljoch zeigt.">
+        <img class="map" data-type="plane" src="images/map--europe--plane.jpg" alt="Eine handgezeichnete Landkarte Europas, die Flugrouten nach Vigiljoch zeigt.">
+        <img class="map" data-type="train" src="images/map--europe--train.jpg" alt="Eine handgezeichnete Landkarte Europas, die Zugrouten nach Vigiljoch zeigt.">
+      </div>
+      <div class="img-overlay__overlay">
+        <div class="switch">
+          <input type="radio" name="transport" id="switch__car" class="switch__input" checked>
+          <label for="switch__car" class="switch__btn" data-type="car">{% include "i--car.svg" %}</label>
+
+          <input type="radio" name="transport" id="switch__plane" class="switch__input">
+          <label for="switch__plane" class="switch__btn" data-type="plane">{% include "i--plane.svg" %}</label>
+
+          <input type="radio" name="transport" id="switch__train" class="switch__input">
+          <label for="switch__train" class="switch__btn" data-type="train">{% include "i--train.svg" %}</label>
+        </div>
+        <div class="img-overlay__content img-overlay__content--is-visible" data-type="car">
+          <h3>Mit dem Auto</h3>
+          <ul>
+            <li>Bitte versucht Fahrgemeinschaften zu bilden</li>
+            <li>Kostenlose Parkmöglichkeiten an der Schwebeseilbahn in Lana</li>
+          </ul>
+          <a href class="btn btn--primary">Karte anzeigen</a>
+        </div>
+        <div class="img-overlay__content" data-type="plane">
+          <h3>Mit dem Flugzeug</h3>
+          <ul>
+            <li>Von Hamburg mit Ryanair nach Bergamo, Verona</li>
+            <li>Von Hamburg mit Lufthansa nach München</li>
+            <li>Von Berlin mit Ryanair nach Bergamo, München</li>
+            <li>Von Berlin mit Lufthansa nach München</li>
+            <li>Von Berlin mit easyjet nach Innsbruck, Malpensa</li>
+            <li>Von Wien mit Ryanair nach Bergamo</li>
+            <li>Von Wien mit Lufthansa nach Verona</li>
+          </ul>
+          <a href class="btn btn--primary">Karte anzeigen</a>
+        </div>
+        <div class="img-overlay__content" data-type="train">
+          <h3>Mit dem Zug</h3>
+          <ul>
+            <li>Mit ICE nach München</li>
+            <li>Von dort mit dem EC Richtung Bologna/Venezia/Verona bis nach Bozen</li>
+          </ul>
+          <a href class="btn btn--primary">Karte anzeigen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section--quote">
+    <div class="quote">
+      <blockquote class="quote__text">
+        Die Liebe allein versteht das Geheimnis, andere zu beschenken und dabei selbst reich zu werden.
+        <cite class="quote__author">
+          &mdash; Clemens Brentano
+        </cite>
+      </blockquote>
+    </div>
   </section>
   <section class="hike section">
     <h2>Weg zum Ferienheim</h2>

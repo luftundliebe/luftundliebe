@@ -1,4 +1,5 @@
-import IntroAnimation from './modules/introAnimation.js'
+import IntroAnimation from './modules/IntroAnimation.js'
+import Switcher from './modules/Switcher.js'
 
 //
 // On DOM loaded
@@ -6,5 +7,6 @@ import IntroAnimation from './modules/introAnimation.js'
 document.addEventListener('DOMContentLoaded', (event) => {
 
   let intro = new IntroAnimation()
+  let switcher = new Switcher()
 
 })

@@ -1,0 +1,26 @@
+.section {
+  width: 100%;
+  padding: 10vh 5vw;
+}
+
+.section--alt {
+  background: $c--green--300;
+  color: $c--white;
+}
+
+.approach {
+
+  padding-bottom: 0;
+
+  p {
+    margin-bottom: $s--700;
+  }
+
+  @media (min-width: 64rem) {
+    padding-bottom: 10vh;
+  }
+}
+
+.section--quote {
+  padding: 0;
+}

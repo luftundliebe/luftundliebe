@@ -6,7 +6,12 @@ body {
   color: $c--black;
 }
 
-h1, h2, h3, h4, h5, h6, p,
+p {
+  max-width: 60ch;
+  font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   max-width: 60ch;
   font-weight: 100;

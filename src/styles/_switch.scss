@@ -1,0 +1,25 @@
+.switch {
+  display: inline-flex;
+  background: $c--white;
+  border-radius: 2px;
+}
+
+.switch__btn {
+  cursor: pointer;
+
+  svg {
+    display: block;
+  }
+}
+
+.switch__input {
+  display: none;
+}
+
+.switch__input:checked + .switch__btn {
+  background: $c--green--100;
+
+  path {
+    fill: $c--white;
+  }
+}
