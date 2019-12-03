@@ -39,6 +39,14 @@ h5 {
   font-size: 1.25em;
 }
 
+.first-letter::first-letter {
+  float: left;
+  font-size: 360%;
+  font-weight: 100;
+  line-height: 0.8;
+  padding-right: 0.5rem;
+}
+
 @media (min-width: 64rem) {
   hyphens: none;
 }
