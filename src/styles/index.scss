@@ -3,6 +3,7 @@
 @import '_normalize.css';
 @import '_typography.scss';
 @import '_main.scss';
+@import '_wrapper.scss';
 @import '_section.scss';
 @import '_intro.scss';
 @import '_logo.scss';
@@ -10,13 +11,18 @@
 @import '_img-overlay.scss';
 @import '_btn.scss';
 @import '_quote.scss';
-@import '_wrapper.scss';
 @import '_img-link.scss';
 @import '_hoverlay.scss';
+@import '_gampl.scss';
+@import '_accommodation.scss';
 
 body {
   background-color: $c--white;
   overflow-x: hidden;
+}
+
+figure {
+  margin: 0;
 }
 
 .divider {

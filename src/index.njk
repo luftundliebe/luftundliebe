@@ -6,15 +6,16 @@ title: Luft & Liebe
   <section class="intro">
     <h1>Luft & Liebe</h1>
   </section>
-  <section class="concept section">
+  <section class="concept section section--padded">
     <div class="wrapper--text">
       <div id="js-logo" class="logo">
         {% include "logo--luft-und-liebe.svg" %}
         <div class="logo__claim">25-29/6/20</div>
       </div>
       <div class="main-act">
-        <div class="main-act__title">Hauptakt</div>
-        <time class="main-act__date" datetime="">27<span class="main-act__separator">/</span>6<span class="main-act__separator">/</span>20</time>
+        <time class="main-act__date" datetime="">
+          {% include 'datum.svg' %}
+        </time>
       </div>
       <p class="first-letter">5 Tage ausgelassen feiern, hoch oben auf dem Vigiljoch. Eine Auszeit nehmen vom Trubel des Alltags, etwas Bergluft schnuppern und mit uns am Samstag unsere Liebe zelebrieren. (Fast) alle unter einem Dach, ganz unkompliziert locker flockig erwarten wir euch ab Donnerstag Nachmittag im Ferienheim Vigiljoch, denn wir feiern ein Fest(ival) und freuen uns, dass du dabei bist und vielleicht auch etwas beitragen möchtest.</p>
       <div class="registration">
@@ -22,7 +23,7 @@ title: Luft & Liebe
     </div>
     </div>
   </section>
-  <section class="approach section section--alt">
+  <section class="approach section section--alt section--padded">
     <div class="wrapper--text">
       <h2>Anfahrt nach Südtirol</h2>
       <p>Wir sind uns bewusst, dass die Anreise nach Südtirol nicht die einfachste ist und wollen sie euch so angenehm wie möglich machen. Solltet ihr Schwierigkeiten haben um von A nach B zu kommen oder habt noch einen Platz im Auto frei, den ihr vergeben möchtet, dann gebt uns bitte Bescheid - wir finden für alles eine Lösung!</p>
@@ -76,7 +77,7 @@ title: Luft & Liebe
       </div>
     </div>
   </section>
-  <section class="section section--quote">
+  <section class="section">
     <div class="quote">
       <blockquote class="quote__text">
         Die Liebe allein versteht das Geheimnis, andere zu beschenken und dabei selbst reich zu werden.
@@ -86,7 +87,7 @@ title: Luft & Liebe
       </blockquote>
     </div>
   </section>
-  <section class="hike section">
+  <section class="hike section section--padded">
     <div class="wrapper--text">
       <h2>Weg zum Ferienheim</h2>
     </div>
@@ -105,12 +106,57 @@ title: Luft & Liebe
   <div class="wrapper--text">
     {% include "divider.svg" %}
   </div>
-  <section class="accomodation section">
+  <section class="accommodation section--padded">
+    <div class="section__header wrapper--text">
+      <h2 class="section__subtitle h5">Die Unterkünfte</h2>
+      <div class="section__title h2">Wo ihr schlafen könnt</div>
+    </div>
+    <div class="ferienheim">
+      <div class="accommodation__header accommodation__header--ferienheim wrapper--text">
+        <h3 class="accommodation__title">Ferienheim</h3>
+        <h4 class="accommodation__subtitle h5">Bettenlager</h4>
+      </div>
+      <img class="ferienheim__img" src="images/foto--ferienheim.jpg" alt="Ein Foto des Ferienheims in Vigiljoch.">
+      <p class="ferienheim__text wrapper--text">Das Ferienheim bietet für einen Großteil der Gäste einen Platz zum schlafen. Die Zimmer verfügen über 4-8 Betten und Gemeinschaftsbädern und Warmwasser. Wer dort schläft, ist dem Geschehen am nächsten, mit allen Vor- und Nachteilen ;) Kostenpunkt: freie Spende.</p>
+    </div>
     <div class="wrapper--text">
-      <h2>Unterkünfte</h2>
-      <h3>Ferienheim</h3>
-      <p>Das Ferienheim bietet für einen Großteil der Gäste einen Platz zum schlafen. Die Zimmer verfugen über 4-8 Betten und Gemeinschaftsbädern und Warmwasser. Wer dort schläft, ist dem Geschehen am nächsten, mit allen Vor- und Nachteilen ;) Kostenpunkt: freie Spende.</p>
       <h3>Gampl Family Alm</h3>
+    </div>
+    <div class="gampl">
+      <a title="Bild öffnen" href="images/foto--gampl.jpg">
+        <figure class="hoverlay">
+          <img class="" src="images/foto--gampl.jpg" alt="Ein Foto der Family Alm Gampl">
+          <div class="hoverlay__overlay">
+            <div class="btn btn--primary">Vergrößern</div>
+          </div>
+        </figure>
+      </a>
+      <a title="Bild öffnen" href="images/foto--gampl-zimmer.jpg">
+        <figure class="hoverlay">
+          <img class="" src="images/foto--gampl-zimmer.jpg" alt="Schlafzimmer im Gampl.">
+          <div class="hoverlay__overlay">
+            <div class="btn btn--primary">Vergrößern</div>
+          </div>
+        </figure>
+      </a>
+      <a title="Bild öffnen" href="images/foto--gampl-wohnzimmer.jpg">
+        <figure class="hoverlay">
+          <img class="" src="images/foto--gampl-wohnzimmer.jpg" alt="Wohnzimmer im Gampl.">
+          <div class="hoverlay__overlay">
+            <div class="btn btn--primary">Vergrößern</div>
+          </div>
+        </figure>
+      </a>
+      <a title="Bild öffnen" href="images/foto--gampl-bad.jpg">
+        <figure class="hoverlay">
+          <img class="" src="images/foto--gampl-bad.jpg" alt="Badezimmer im Gampl.">
+          <div class="hoverlay__overlay">
+            <div class="btn btn--primary">Vergrößern</div>
+          </div>
+        </figure>
+      </a>
+    </div>
+    <div class="wrapper--text">
       <p>Die in fünf Gehminuten zu erreichende Gampl Family Alm bietet Apartements für ca. 30 Leute. Die Wohnungen haben 4-6 Betten (inkl. Schlafsofas), eine wahnsinnig tolle Aussicht und natürlich wesentlich mehr Privacy und Komfort als das Ferienheim. Bitte versucht nicht selbst zu buchen sondern meldet euch bei uns. Wir haben alle verfügbaren Einheiten geblockt.</p>
       <h3>Vigilius Mountain Luxusresort</h3>
       <p>Etwa 50 Gehminuten entfernt gibt es noch eine weitere gehobene Übernachtungsmöglichkeit. Das Hotel ist für seinen hohen Standard und dementsprechende Preise bekannt. Bitte bucht eigenständig und gebt uns einfach ein kurzes Update.</p>
@@ -118,7 +164,7 @@ title: Luft & Liebe
       <p>Wenn ihr außerdem noch rumreisen oder einfach länger in Südtirol bleiben möchtet, gebt uns Bescheid und wir geben euch weitere Tipps zu Übernachtungsmöglichkeiten und Aktivitäten.</p>
     </div>
   </section>
-  <section class="volunteering section section--alt">
+  <section class="volunteering section section--alt section--padded">
     <div class="wrapper--text">
       <h2>Volunteering</h2>
       <h3>Artist Registration</h3>
@@ -128,7 +174,7 @@ title: Luft & Liebe
       <p>Du hast Lust an den Tagen vor dem Hauptakt tatkräftig anzupacken? Es gibt sicher noch einiges zu tun und wir können jede helfende Hand brauchen, sei es beim Aufbau, in der Küche oder beim Feuer und Stockbrot machen. Näheres erfährst du im Newsletter.</p>
     </div>
   </section>
-  <section class="presents section">
+  <section class="presents section section--padded">
     <div class="wrapper--text">
       <h2>Geschenke</h2>
       <p>Unser größtes Geschenk ist es, dass du den Weg auf dich nimmst und dabei bist. Wenn du trotzdem etwas schenken magst, dann freuen wir uns über eine Spende für unseren anstehenden Love-road trip.</p>
@@ -138,7 +184,7 @@ title: Luft & Liebe
   <div class="wrapper--text">
     {% include "divider.svg" %}
   </div>
-  <section class="activities section">
+  <section class="activities section section--padded">
     <div class="wrapper--text">
       <h2>Freizeitaktivitäten</h2>
       <p>Es gibt zahlreiche wunderschöne Wanderwege, mal leichter, mal etwas schwieriger direkt vor der Haustür des Ferienheims. Also pack deine Wanderschuhe und etwas Proviant ein, mach dich auf die Socken und erkunde die Natur!</p>

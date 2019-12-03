@@ -8,7 +8,6 @@
               url(../images/foto--klara-tom.jpg) top left no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .quote__text {
@@ -31,6 +30,7 @@
   .quote {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    background-attachment: fixed;
   }
 
   .quote__text {
