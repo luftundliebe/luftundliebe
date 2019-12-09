@@ -1,0 +1,44 @@
+.presents,
+.presents .wrapper--text {
+  position: relative;
+  overflow: hidden;
+  color: $c--white;
+
+  h2 {
+    color: $c--white;
+  }
+}
+
+.presents {
+
+  margin-bottom: $s--900;
+
+  &:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba($c--green--100, .6);
+  }
+
+  .wrapper--text {
+    z-index: 2;
+  }
+}
+
+.video-container,
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.video {
+  width: 100%;
+  // transform: translateY(-50%);
+}

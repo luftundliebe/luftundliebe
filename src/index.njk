@@ -2,10 +2,10 @@
 layout: layouts/base.njk
 title: Luft & Liebe
 ---
+<header class="intro">
+  <h1>Luft & Liebe</h1>
+</header>
 <main class="main">
-  <section class="intro">
-    <h1>Luft & Liebe</h1>
-  </section>
   <section class="concept section section--padded">
     <div class="wrapper--text">
       <div id="js-logo" class="logo">
@@ -19,8 +19,31 @@ title: Luft & Liebe
       </div>
       <p class="first-letter">5 Tage ausgelassen feiern, hoch oben auf dem Vigiljoch. Eine Auszeit nehmen vom Trubel des Alltags, etwas Bergluft schnuppern und mit uns am Samstag unsere Liebe zelebrieren. (Fast) alle unter einem Dach, ganz unkompliziert locker flockig erwarten wir euch ab Donnerstag Nachmittag im Ferienheim Vigiljoch, denn wir feiern ein Fest(ival) und freuen uns, dass du dabei bist und vielleicht auch etwas beitragen möchtest.</p>
       <div class="registration">
-      <a href="" class="btn btn--primary">Jetzt Anmelden!</a>
+        <a href="https://forms.gle/VCB9XgttZK9w6WWn7" target="_blank" class="btn btn--primary">Jetzt Anmelden!</a>
+      </div>
     </div>
+    <div class="wrapper--text section--padded">
+      {% include "divider.svg" %}
+    </div>
+    <div class="wrapper--text">
+      <div class="section__header">
+        <h2 class="section__subtitle h5">TL;DR</h2>
+        <div class="section__title h2">Die wichtigsten Infos</div>
+      </div>
+      <dl class="tldr__items">
+        <dt class="tldr__title">Zeitraum</dt>
+        <dd class="tldr__desc">Do, 25. bis Mo, 29. Juni 2020</dd>
+        <dt class="tldr__title">Freie Trauung</dt>
+        <dd class="tldr__desc">Sa. 27. Juni 2020</dd>
+        <dt class="tldr__title">Location</dt>
+        <dd class="tldr__desc"><a href="https://goo.gl/maps/oBqMdVD3QghJKt5g8" target="_blank">{% include "i--map.svg" %}&nbsp;Ferienheim Vigiljoch</a>, Südtirol, Italien auf knapp 1.800&nbsp;Höhenmetern(!)</dd>
+        <dt class="tldr__title">Anreise</dt>
+        <dd class="tldr__desc">Ihr müsst bis nach <a href="https://goo.gl/maps/bfXvknN99fhf5jwCA" target="_blank">{% include "i--map.svg" %}&nbsp;Lana</a>, dann mit der Schwebebahn den Berg hoch und mit dem Sessellift oder zu Fuß (ca. 50min) bis zum Ferienheim.</dd>
+        <dt class="tldr__title">Schlafen</dt>
+        <dd class="tldr__desc">Ganz spartanisch im Ferienheim oder komfortabel auf der <br><a href="https://goo.gl/maps/N3EmK4wzJ93VhkbDA" target="_blank">{%include "i--map.svg"%}&nbsp;Family&nbsp;Alm&nbsp;Gampl</a></dd>
+        <dt class="tldr__title">TODO</dt>
+        <dd class="tldr__desc"><a href="https://forms.gle/VCB9XgttZK9w6WWn7" target="_blank">Anmelden!</a> Danke :)</dd>
+      </dl>
     </div>
   </section>
   <section class="approach section section--alt section--padded">
@@ -51,7 +74,7 @@ title: Luft & Liebe
             <li>Bitte versucht Fahrgemeinschaften zu bilden</li>
             <li>Kostenlose Parkmöglichkeiten an der Schwebeseilbahn in Lana</li>
           </ul>
-          <a href class="btn btn--primary">Karte anzeigen</a>
+          <a href="images/map--europe--car.jpg" class="btn btn--primary">Karte anzeigen</a>
         </div>
         <div class="img-overlay__content" data-type="plane">
           <h3>Mit dem Flugzeug</h3>
@@ -64,7 +87,7 @@ title: Luft & Liebe
             <li>Von Wien mit Ryanair nach Bergamo</li>
             <li>Von Wien mit Lufthansa nach Verona</li>
           </ul>
-          <a href class="btn btn--primary">Karte anzeigen</a>
+          <a href="images/map--europe--plane.jpg" class="btn btn--primary">Karte anzeigen</a>
         </div>
         <div class="img-overlay__content" data-type="train">
           <h3>Mit dem Zug</h3>
@@ -72,7 +95,7 @@ title: Luft & Liebe
             <li>Mit ICE nach München</li>
             <li>Von dort mit dem EC Richtung Bologna/Venezia/Verona bis nach Bozen</li>
           </ul>
-          <a href class="btn btn--primary">Karte anzeigen</a>
+          <a href="images/map--europe--train.jpg" class="btn btn--primary">Karte anzeigen</a>
         </div>
       </div>
     </div>
@@ -118,13 +141,15 @@ title: Luft & Liebe
         <h4 class="accommodation__subtitle h5">Bettenlager</h4>
       </div>
       <img class="ferienheim__img" src="images/foto--ferienheim.jpg" alt="Ein Foto des Ferienheims in Vigiljoch.">
-      <p class="ferienheim__text wrapper--text">Das Ferienheim bietet für einen Großteil der Gäste einen Platz zum schlafen. Die Zimmer verfügen über 4-8 Betten und Gemeinschaftsbädern und Warmwasser. Wer dort schläft, ist dem Geschehen am nächsten, mit allen Vor- und Nachteilen ;) Kostenpunkt: freie Spende.</p>
+      <div class="ferienheim__text wrapper--text">
+        <p>Das Ferienheim bietet für einen Großteil der Gäste einen Platz zum schlafen. Die Zimmer verfügen über <span class="highlight highlight--alt">4-8 Betten</span> und <span class="highlight highlight--alt">Gemeinschaftsbädern</span> und Warmwasser. Wer dort schläft, ist dem Geschehen am nächsten, mit allen Vor- und Nachteilen ;) Leider finden hier nicht alle Gäste Platz, daher freuen wir uns über Freiwillige, die auf die Family Alm ausweichen. Danke!</p>
+      </div>
     </div>
     <div class="gampl">
       <div class="accommodation__header accommodation__header--gampl wrapper--text">
         <h3 class="accommodation__title">Gampl Family Alm</h3>
-        <h4 class="accommodation__subtitle h5">Appartments zum Relaxen</h4>
-        <a href="https://www.wirtshaus.it/de/gampl/" class="accomodation__btn btn btn--primary">Zur Website</a>
+        <h4 class="accommodation__subtitle h5">Apartments zum Relaxen</h4>
+        <a href="https://www.wirtshaus.it/de/gampl/" target="_blank" class="accomodation__btn btn btn--primary">Zur Website</a>
       </div>
       <img class="gampl__img" src="images/foto--gampl.jpg" alt="Ein Foto der Gampl Family Alm.">
       <div class="gampl__detail-imgs">
@@ -135,7 +160,7 @@ title: Luft & Liebe
     </div>
     <div class="gampl__text section--alt section--padded">
       <div class="wrapper--text">
-        <p>Die in fünf Gehminuten zu erreichende Gampl Family Alm bietet Apartements für ca. 30 Leute. Die Wohnungen haben 4-6 Betten (inkl. Schlafsofas), eine wahnsinnig tolle Aussicht und natürlich wesentlich mehr Privacy und Komfort als das Ferienheim. Bitte versucht nicht selbst zu buchen sondern meldet euch bei uns. Wir haben alle verfügbaren Einheiten geblockt.</p>
+        <p>Die in fünf Gehminuten zu erreichende Gampl Family Alm bietet <span class="highlight highlight--alt">7&nbsp;Apartments</span> für insgesamt ca. 30 Leute. Die Wohnungen haben 4-6 Betten (inkl. Schlafsofas), eine wahnsinnig tolle Aussicht und natürlich wesentlich mehr <span class="highlight highlight--alt">Privacy und Komfort</span> als das Ferienheim. Bitte versucht nicht selbst zu buchen sondern meldet euch bei uns. Wir haben alle verfügbaren Einheiten geblockt.</p>
       </div>
     </div>
 
@@ -143,13 +168,13 @@ title: Luft & Liebe
       <div class="accommodation__header accommodation__header--vigilius wrapper--text">
         <h3 class="accommodation__title">Vigilius Mountain Luxusresort</h3>
         <h4 class="accommodation__subtitle h5">Upper Class Lodging</h4>
-        <a href="https://www.vigilius.it/de" class="accomodation__btn btn btn--primary">Zur Website</a>
+        <a href="https://www.vigilius.it/de" target="_blank" class="accomodation__btn btn btn--primary">Zur Website</a>
       </div>
       <img class="vigilius__img" src="images/foto--vigilius.jpg" alt="Ein Foto des Vigilius Luxusresorts.">
     </div>
 
     <div class="wrapper--text">
-      <p>Etwa 50 Gehminuten entfernt gibt es noch eine weitere gehobene Übernachtungsmöglichkeit. Das Hotel ist für seinen hohen Standard und dementsprechende Preise bekannt. Bitte bucht eigenständig und gebt uns einfach ein kurzes Update.</p>
+      <p>Etwa 50 Gehminuten entfernt gibt es noch eine weitere <span class="highlight">gehobene Übernachtungsmöglichkeit</span>. Das Hotel ist für seinen hohen Standard und dementsprechende Preise bekannt. Bitte bucht eigenständig und gebt uns einfach ein kurzes Update.</p>
     </div>
   </section>
   <div class="wrapper--text">
@@ -168,17 +193,21 @@ title: Luft & Liebe
     <div class="wrapper--text">
       <h2>Volunteering</h2>
       <h3>Artist Registration</h3>
-      <p>Du hast Bock unser Festival künstlerisch zu unterstützen? Ob auflegen, eigenes Instrument, deine Stimme oder mit Theater, Yoga oder oder - wir freuen uns, wenn du dich einbringen willst. Hier sind deiner Fantasie keine Grenzen gesetzt, es muss nicht das Thema Hochzeit tragen, es soll nur dir und der Kolonie Spaß bringen!</p>
-      <p>Achtung: solltest du irgend eine Einlage planen, von der wir nichts wissen sollen, dann wende dich bitte an das Luft & Liebe Team (Anni, Chris, Flo)</p>
+      <p>Du hast Bock unser Festival <span class="highlight highlight--alt">künstlerisch</span> zu unterstützen? Ob auflegen, eigenes Instrument, deine Stimme oder mit Theater, Yoga oder oder oder... Wir freuen uns, wenn du dich einbringen willst. Hier sind deiner Fantasie keine Grenzen gesetzt, es muss nicht das Thema Hochzeit tragen, es soll nur dir und der Kolonie Spaß bringen!</p>
+      <p><span class="highlight highlight--alt">Achtung:</span> solltest du irgend eine Einlage planen, von der wir nichts wissen sollen, dann wende dich bitte an das Luft & Liebe Team (Anni, Chris, Flo)</p>
       <h3>Support Workshops</h3>
-      <p>Du hast Lust an den Tagen vor dem Hauptakt tatkräftig anzupacken? Es gibt sicher noch einiges zu tun und wir können jede helfende Hand brauchen, sei es beim Aufbau, in der Küche oder beim Feuer und Stockbrot machen. Näheres erfährst du im Newsletter.</p>
+      <p>Du hast Lust an den Tagen vor dem Hauptakt tatkräftig anzupacken? Es gibt sicher noch einiges zu tun und wir können <span class="highlight highlight--alt">jede helfende Hand</span> brauchen, sei es beim Aufbau, in der Küche oder beim Feuer und Stockbrot machen. Näheres erfährst du im Newsletter.</p>
     </div>
   </section>
   <section class="presents section section--padded">
+    <div class="video-container">
+      <video class="video" src="images/video.mp4" poster="poster.jpg" autoplay loop>
+      </video>
+    </div>
     <div class="wrapper--text">
       <h2>Geschenke</h2>
-      <p>Unser größtes Geschenk ist es, dass du den Weg auf dich nimmst und dabei bist. Wenn du trotzdem etwas schenken magst, dann freuen wir uns über eine Spende für unseren anstehenden Love-road trip.</p>
-      <p>Und solltet ihr doch etwas ganz anderes schenken wollen, dann meldet euch einfach beim Luft & Liebe Support Team.</p>
+      <p>Unser größtes Geschenk ist es, dass du den Weg auf dich nimmst und dabei bist. Wenn du trotzdem etwas schenken magst, dann freuen wir uns über eine Spende für unseren anstehenden <span class="highlight">Road&nbsp;Trip</span>.</p>
+      <p>Und solltet ihr doch etwas ganz anderes schenken wollen, dann meldet euch einfach beim Luft & Liebe Team.</p>
     </div>
   </section>
   <div class="wrapper--text">
@@ -187,8 +216,29 @@ title: Luft & Liebe
   <section class="activities section section--padded">
     <div class="wrapper--text">
       <h2>Freizeitaktivitäten</h2>
-      <p>Es gibt zahlreiche wunderschöne Wanderwege, mal leichter, mal etwas schwieriger direkt vor der Haustür des Ferienheims. Also pack deine Wanderschuhe und etwas Proviant ein, mach dich auf die Socken und erkunde die Natur!</p>
-      <p>Für genügend Spiele, ob drinnen oder draußen, ist gesorgt - lass dich einfach überraschen!</p>
+      <p>Es gibt zahlreiche wunderschöne Wanderwege, mal leichter, mal etwas schwieriger direkt vor der Haustür des Ferienheims. Also pack deine <span class="highlight">Wanderschuhe</span> und etwas Proviant ein, mach dich auf die Socken und erkunde die Natur!</p>
+      <p>Für genügend <span class="highlight">Spiele</span>, ob drinnen oder draußen, ist gesorgt - lass dich einfach überraschen!</p>
+    </div>
+  </section><div class="wrapper--text">
+    {% include "divider.svg" %}
+  </div>
+  <section class="photo section section--padded">
+    <div class="wrapper--text">
+      <h2>Fotografieren</h2>
+      <p>Wir möchten euch bitten zur freien Trauung eure <span class="highlight highlight--alt">Handys und Kameras wegzupacken</span> und den Moment der Zeremonie voll und ganz zu genießen. Während des ganzen Tages werden sich <span class="highlight highlight--alt">professionelle Fotografen</span> um die Bilder kümmern, die wir gerne mit euch teilen werden.</p>
+      <h2>Filmen</h2>
+      <p>Wir würden gerne nach dem Event einen kurzen Film schneiden. Daher bitten wir alle, die eine <span class="highlight">GoPro</span> oder ähnliches Gerät besitzen, während der Tage <span class="highlight">(außer zur Trauung)</span> fleißig zu filmen. Wir sammeln dann das Rohmaterial und machen was schönes draus, das wir dann wieder mit euch teilen :)</p>
     </div>
   </section>
 </main>
+<footer class="footer section--padded">
+  <div class="wrapper--text">
+    <div class="copy">
+      &copy; {{ page.date.getUTCFullYear() }} Luft & Liebe
+      <div class="contact">
+        <a href="mailto:luftundliebe@posteo.de" class="contact__link">luftundliebe@posteo.de</a>
+      </div>
+    </div>
+    <div class="oiiiio">OIIIIO</div>
+  </div>
+</footer>

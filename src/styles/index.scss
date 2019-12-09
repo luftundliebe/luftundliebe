@@ -13,8 +13,9 @@
 @import '_quote.scss';
 @import '_img-link.scss';
 @import '_hoverlay.scss';
-// @import '_gampl.scss';
 @import '_accommodation.scss';
+@import '_presents.scss';
+@import '_footer.scss';
 
 body {
   background-color: $c--white;
@@ -26,7 +27,7 @@ figure {
 }
 
 .divider {
-  max-width: 100%;
+  min-width: 100%;
 }
 
 // h1,h2,h3,h4,h5,h6,hgroup,
