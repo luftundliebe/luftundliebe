@@ -6,7 +6,7 @@ import Switcher from './modules/Switcher.js'
 // ------------------------------------------------------------- //
 document.addEventListener('DOMContentLoaded', (event) => {
 
-  // let intro = new IntroAnimation()
+  let intro = new IntroAnimation()
   let switcher = new Switcher()
 
 })
