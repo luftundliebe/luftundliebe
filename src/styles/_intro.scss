@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   width: 100%;
   height: 100vh;
   background: $c--green--300;
@@ -21,4 +22,37 @@
   display: inline-block;
   transform: scale(.75);
   opacity: 0;
+}
+
+.mountain {
+  position: absolute;
+  bottom: 0;
+  left: 80%;
+  width: 50%;
+  transform: translateX(-50%);
+
+  svg {
+    display: block;
+  }
+}
+
+.mountain--large {
+  left: 110%;
+  width: 90%;
+
+  path {
+    fill: $c--red--200;
+  }
+}
+
+@media (orientation: portrait) {
+  .mountain {
+    left: 50%;
+    width: 150%;
+  }
+
+  .mountain--large {
+    left: 140%;
+    width: 250%;
+  }
 }

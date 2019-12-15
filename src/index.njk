@@ -2,8 +2,8 @@
 layout: layouts/base.njk
 title: Luft & Liebe
 ---
-<header class="intro">
-  <h1>
+<header id="js-intro" class="intro">
+  <h1 id="js-logo">
     <span class="char">L</span>
     <span class="char">u</span>
     <span class="char">f</span>
@@ -15,6 +15,12 @@ title: Luft & Liebe
     <span class="char">b</span>
     <span class="char">e</span>
   </h1>
+  <div id="js-mountain--left" class="mountain">
+    {% include "mountain.svg" %}
+  </div>
+  <div id="js-mountain--right" class="mountain mountain--large">
+    {% include "mountain.svg" %}
+  </div>
 </header>
 <main class="main">
   <section class="concept section section--padded">
