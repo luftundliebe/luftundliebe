@@ -1,13 +1,40 @@
 
 .logo {
-  max-width: 25rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  width: 100vw;
+  // max-width: 24rem;
+  height: 100vh;
   margin: 0 auto;
-  padding: calc(4rem + 1vw) 0;
+  transform: translateY(-100vh);
+  // max-width: 25rem;
+  // margin: 0 auto;
+  // padding: calc(4rem + 1vw) 0;
 }
 
-.logo__claim {
+#herz,
+#berg--abdeckung {
   opacity: 0;
-  font-size: 150%;
-  text-align: center;
-  color: $c--green--100;
+}
+
+#berg--hinten,
+#berg--vorne {
+  transform-origin: center bottom;
+  transform: translateY(36vh) scale(6);
+}
+
+#berg--hinten {
+  stroke: $c--green--100;
+  fill: $c--green--100;
+}
+
+#berg--vorne {
+  stroke: $c--red--200;
+  fill: $c--red--200;
+}
+
+#claim {
+  fill: white;
+  transform: translateY(-5vh);
 }

@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: Luft & Liebe
 ---
 <header id="js-intro" class="intro">
-  <h1 id="js-logo">
+  {# <h1 id="js-logo">
     <span class="char">L</span>
     <span class="char">u</span>
     <span class="char">f</span>
@@ -20,15 +20,14 @@ title: Luft & Liebe
   </div>
   <div id="js-mountain--right" class="mountain mountain--large">
     {% include "mountain.svg" %}
-  </div>
+  </div> #}
 </header>
 <main class="main">
+  <div id="js-logo" class="logo">
+    {% include "logo.svg" %}
+  </div>
   <section class="concept section section--padded">
     <div class="wrapper--text">
-      <div id="js-logo" class="logo">
-        {% include "logo--luft-und-liebe.svg" %}
-        <div class="logo__claim">25-29/6/20</div>
-      </div>
       <div class="main-act">
         <time class="main-act__date" datetime="">
           {% include 'datum.svg' %}
