@@ -10,5 +10,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
   let intro = new IntroAnimation()
   let switcher = new Switcher()
   let io = new IntersectionObserver()
-
+  document.querySelector('body').classList.remove('no-js')
 })
