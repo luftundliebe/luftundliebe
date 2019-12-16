@@ -35,8 +35,8 @@ class IntroAnimation {
         .to(this.mountainBack, 1, { x: '0%', opacity: 1 }, '0')
         .to(this.mountainCover, 1, { x: '0%' }, '0')
         .to(this.mountainFront, 1, { x: '0%', opacity: 1 }, '0')
-        .to(this.claim, 1, { y: '0%', opacity: 1 }, '1')
-        .to(this.heart, 1, { y: '0%', opacity: 1 }, '1')
+        .to(this.claim, 1, { y: '0%', opacity: 1 }, '0')
+        .to(this.heart, 1, { y: '0%', opacity: 1 }, '0')
 
 
     // Logo letters animation
