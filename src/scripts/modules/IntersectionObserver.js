@@ -16,8 +16,10 @@ class IO {
           // console.log(`${entry.target.id} is in view: ${entry.isIntersecting}`)
 
           if(entry.isIntersecting) {
-            entry.target.classList.remove('appear--bottom')  
-            if(entry.target.classList.contains('video')) entry.target.setAttribute('preload', true)
+            entry.target.classList.remove('appear--bottom')
+            if(entry.target.classList.contains('video')) {
+              entry.target.setAttribute('src', entry.target.dataset.src)
+            }
           }
         }
       },{
