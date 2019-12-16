@@ -21,9 +21,13 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   background-color: $c--white;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 figure {
