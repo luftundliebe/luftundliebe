@@ -21,10 +21,9 @@
   box-sizing: border-box;
 }
 
-// html {
-//   height: 100%;
-//   overflow-x: hidden;
-// }
+html {
+  overflow-x: hidden;
+}
 
 body {
   background-color: $c--white;
@@ -37,6 +36,15 @@ figure {
 
 .divider {
   max-width: 100%;
+}
+
+.enter {
+  transition: .3s ease-out;
+}
+
+.appear--bottom {
+  opacity: 0;
+  transform: translateY(40px);
 }
 
 // h1,h2,h3,h4,h5,h6,hgroup,
