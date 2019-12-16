@@ -18,7 +18,7 @@ class IO {
           if(entry.isIntersecting) {
             entry.target.classList.remove('appear--bottom')
             if(entry.target.classList.contains('video')) {
-              entry.target.setAttribute('src', entry.target.dataset.src)
+              entry.target.src = entry.target.dataset.src
             }
           }
         }
