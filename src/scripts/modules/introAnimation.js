@@ -5,7 +5,9 @@ import ScrollMagic from 'ScrollMagic';
 class IntroAnimation {
   constructor() {
 
-    this.scaleFactor = 12
+    this.scaleFactor = window.innerWidth / 20
+
+    console.log(this.scaleFactor)
 
     this.logo = document.querySelector('#js-logo')
     this.heart = document.querySelector('#herz')
