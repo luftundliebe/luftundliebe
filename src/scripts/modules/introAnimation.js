@@ -5,7 +5,7 @@ import ScrollMagic from 'ScrollMagic';
 class IntroAnimation {
   constructor() {
 
-    this.scaleFactor = 5
+    this.scaleFactor = 12
 
     this.logo = document.querySelector('#js-logo')
     this.heart = document.querySelector('#herz')
@@ -22,36 +22,39 @@ class IntroAnimation {
     //   .to(this.mountainFront, 1, { transform: 'translateY(0) scale(1)'}, '0')
 
     this.tlIntroSetup
-        .set(this.logo, { scale: this.scaleFactor, y: '-150vh' })
+        .set(this.logo, { scale: this.scaleFactor, y: '-100vh' })
         .set(this.heart, { opacity: 0 })
         .set(this.mountainCover, { opacity: 0 })
-        .set(this.mountainBack, { fill: '#343633', stroke: '#343633', y: '2.5vh' })
-        .set(this.mountainFront, { fill: '#D7BCAE', stroke: '#D7BCAE', y: '2.5vh' })
-        .set(this.claim, { scale: 1 / this.scaleFactor, y: '-5vh', fill: '#FFFFFF', transformOrigin: 'center center' })
+        .set(this.mountainBack, { fill: '#343633', stroke: '#343633' })
+        .set(this.mountainFront, { fill: '#D7BCAE', stroke: '#D7BCAE' })
+        .set(this.claim, { opacity: 0, fill: '#FFFFFF' })
 
     this.tlIntro
         .to(this.logo, 1, { scale: 1, y: 0 }, '0')
         .to(this.mountainBack, 1, { fill: 'transparent', stroke: '#C2D6C8', y: 0 }, '0')
         .to(this.mountainFront, 1, { fill: 'transparent', stroke: '#89A491', y: 0 }, '0')
-        .to(this.claim, 1, { scale: 1, fill: '#3C403C', y: 0 }, '0')
+        .to(this.claim, 1, { opacity: 1, fill: '#3C403C' }, '0')
         .to(this.heart, .5, { opacity: 1 }, '1')
         .to(this.mountainCover, .5, { opacity: 1 }, '1')
 
 
     // Logo letters animation
-    // this.chars = document.querySelectorAll('.char')
+    this.chars = document.querySelectorAll('.char')
     // this.logo = document.querySelector('#js-logo')
     // this.intro = document.querySelector('#js-intro')
     //
-    // this.tlCharsIntro = new TimelineMax()
-    // this.tlCharsIntro.staggerTo(this.chars, 1, { opacity: 1, scale: 1, ease: Power1.easeOut }, .1)
-    //
-    // this.tlCharsOutro = new TimelineMax()
-    // this.tlCharsOutro
-    //     // .staggerTo(this.chars, 1, { opacity: 0 }, .1, '0')
-    //     // .staggerTo(this.chars, 2, { y: '-200%', ease: Power1.easeOut }, .1, '0')
-    //     .to(this.logo, 10, { y: '80vh', color: '#343633'}, '0')
-    //
+    this.tlCharsIntro = new TimelineMax()
+    this.tlCharsIntro
+        .fromTo(this.mountainBack, 1, { opacity: 0, x: "-50%" }, { opacity: 1, x: '0%' }, "0")
+        .fromTo(this.mountainFront, 1, { opacity: 0, x: "50%" }, { opacity: 1, x: '0%' }, "0")
+        .staggerTo(this.chars, 1, { opacity: 1, scale: 1, ease: Power1.easeOut }, .1, '1')
+
+    this.tlCharsOutro = new TimelineMax()
+    this.tlCharsOutro
+        .staggerTo(this.chars, 1, { opacity: 0 }, .1, '0')
+        .staggerTo(this.chars, 2, { y: '-200%', ease: Power1.easeOut }, .1, '0')
+        // .to(this.logo, 10, { y: '80vh', color: '#343633'}, '0')
+
     // // Mountains animation
     // this.mountainLeft = document.querySelector('#js-mountain--left')
     // this.mountainRight = document.querySelector('#js-mountain--right')
@@ -72,14 +75,15 @@ class IntroAnimation {
     .setTween(this.tlIntro)
     .addTo(this.ctrl)
 
-    // // Logo scene
-    // this.scene = new ScrollMagic.Scene({
-    //   triggerElement: document.querySelector('#js-intro'),
-    //   triggerHook: 0,
-    //   duration: "200%"
-    // })
-    // .setTween(this.tlCharsOutro)
-    // .addTo(this.ctrl)
+    // Logo scene
+    this.scene = new ScrollMagic.Scene({
+      triggerElement: document.querySelector('#js-intro'),
+      triggerHook: 0,
+      duration: "50%"
+    })
+    // .setPin(document.querySelector('#js-logo-claim'))
+    .setTween(this.tlCharsOutro)
+    .addTo(this.ctrl)
     //
     // // Mountain scene
     // this.sceneMountains = new ScrollMagic.Scene({
