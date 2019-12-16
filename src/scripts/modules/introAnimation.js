@@ -22,7 +22,7 @@ class IntroAnimation {
     //   .to(this.mountainFront, 1, { transform: 'translateY(0) scale(1)'}, '0')
 
     this.tlIntroSetup
-        .set(this.logo, { scale: this.scaleFactor, y: '-100vh' })
+        .set(this.logo, { scale: this.scaleFactor, y: '-150vh' })
         .set(this.heart, { opacity: 0 })
         .set(this.mountainCover, { opacity: 0 })
         .set(this.mountainBack, { fill: '#343633', stroke: '#343633', y: '2.5vh' })
