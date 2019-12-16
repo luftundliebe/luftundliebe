@@ -65,7 +65,7 @@ class IntroAnimation {
     this.IntroScene = new ScrollMagic.Scene({
       triggerElement: document.querySelector('#js-intro'),
       triggerHook: 0,
-      duration: '150%'
+      duration: '100%'
     })
     .setTween(this.tlIntro)
     .addTo(this.ctrl)
