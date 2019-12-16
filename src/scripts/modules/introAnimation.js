@@ -5,6 +5,8 @@ import ScrollMagic from 'ScrollMagic';
 class IntroAnimation {
   constructor() {
 
+    this.scaleFactor = 5
+
     this.logo = document.querySelector('#js-logo')
     this.heart = document.querySelector('#herz')
     this.mountainBack = document.querySelector('#berg--hinten')
@@ -20,18 +22,18 @@ class IntroAnimation {
     //   .to(this.mountainFront, 1, { transform: 'translateY(0) scale(1)'}, '0')
 
     this.tlIntroSetup
-        .set(this.logo, { y: '-100vh' })
+        .set(this.logo, { scale: this.scaleFactor, y: '-100vh' })
         .set(this.heart, { opacity: 0 })
         .set(this.mountainCover, { opacity: 0 })
-        .set(this.mountainBack, { scale: 4, fill: '#343633', stroke: '#343633', transformOrigin: 'right bottom', y: '24vh' })
-        .set(this.mountainFront, { scale: 4, fill: '#D7BCAE', stroke: '#D7BCAE', transformOrigin: 'left bottom', y: '24vh' })
-        .set(this.claim, { fill: '#FFFFFF', y: '-4vh' })
+        .set(this.mountainBack, { fill: '#343633', stroke: '#343633', y: '2.5vh' })
+        .set(this.mountainFront, { fill: '#D7BCAE', stroke: '#D7BCAE', y: '2.5vh' })
+        .set(this.claim, { scale: 1 / this.scaleFactor, y: '-5vh', fill: '#FFFFFF', transformOrigin: 'center center' })
 
     this.tlIntro
-        .to(this.logo, 1, { y: 0 }, '0')
-        .to(this.mountainBack, 1, { scale: 1, fill: 'transparent', stroke: '#C2D6C8', transformOrigin: 'right bottom', y: 0 }, '0')
-        .to(this.mountainFront, 1, { scale: 1, fill: 'transparent', stroke: '#89A491', transformOrigin: 'left bottom', y: 0 }, '0')
-        .to(this.claim, 1, { fill: '#3C403C', y: 0 }, '0')
+        .to(this.logo, 1, { scale: 1, y: 0 }, '0')
+        .to(this.mountainBack, 1, { fill: 'transparent', stroke: '#C2D6C8', y: 0 }, '0')
+        .to(this.mountainFront, 1, { fill: 'transparent', stroke: '#89A491', y: 0 }, '0')
+        .to(this.claim, 1, { scale: 1, fill: '#3C403C', y: 0 }, '0')
         .to(this.heart, .5, { opacity: 1 }, '1')
         .to(this.mountainCover, .5, { opacity: 1 }, '1')
 
